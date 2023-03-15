@@ -207,7 +207,7 @@
     outline: 0;
 }
 .calendar-mens{
-    border: 1px solid #FF9CF4;
+    border: 1px solid rgba(255, 156, 244, 0.2);
     width: fit-content;
     margin-left: 1px;
     padding: 5px;
@@ -233,4 +233,9 @@
 
 .wrapper{
     height:100vh;
+}
+
+.btn{
+    background-color: #ffffff;
+    border-color: #FF9CF4;
 }
