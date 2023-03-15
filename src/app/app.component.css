@@ -1,12 +1,38 @@
 .group-1-5 {
-    height: 430px;
-    width: 768px;
+    height: 100%;
+    width: 100%;
 }
+.app-name {
+    background-color: rgba(255, 228, 242, 0.2);
+    border: #FFE4F2;
+    margin: 10px;
+}
+.app-title {
+    color: #FF6B65; opacity: 1;
+    -webkit-text-stroke-width: 20%;
+    -webkit-text-stroke-color: #797979;
+    font-family: Nunito;
+}
+
 .rectangle-2-9 {
-    height: 430px;
-    width: 768px;
+    height: 50%;
+    width: 100%;
     background-color: #ffffff;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
+}
+.rectangle-2-10 {
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 1px #000000;
+    height: 100%;
+    padding: 1%;
+}
+.col-6{
+    padding: 1%;
+}
+.body-col{
+    float: left;
+    width: 48%;
+    margin: 1%;
 }
 .img-1 {
     height: 430px;
@@ -18,8 +44,9 @@
     width: 305px;
 }
 .group-1-6 {
-    height: 25px;
-    width: 125px;
+    margin: 5%;
+    width: fit-content;
+    height: fit-content;
 }
 .rectangle-3-7 {
     border-radius: 8px;
@@ -28,17 +55,21 @@
     background-color: #ffe4f2;
 }
 .text-3 {
-    text-align: left;
-    vertical-align: top;
-    font-size: 13px;
+    text-align: center;
+    font-size: 16px;
     font-family: Nunito;
-    /*letter-spacing: -1.5%;*/
     line-height: 17%;
     color: #000000;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .group-1-7 {
-    height: 25px;
-    width: 125px;
+    width: fit-content;
+    height: fit-content;
+    margin: 5%;
 }
 .rectangle-3-8 {
     border-radius: 8px;
@@ -46,18 +77,11 @@
     width: 125px;
     background-color: #f8f48c;
 }
-.text-4 {
-    text-align: left;
-    vertical-align: top;
-    font-size: 13px;
-    font-family: Nunito;
-    /*letter-spacing: -1.5%;*/
-    line-height: 17%;
-    color: #000000;
-}
+
 .group-1-8 {
-    height: 25px;
-    width: 125px;
+    width: fit-content;
+    height: fit-content;
+    margin: 5%;
 }
 .rectangle-3-9 {
     border-radius: 8px;
@@ -65,18 +89,11 @@
     width: 125px;
     background-color: rgba(128, 110, 191, 0.8399999737739563);
 }
-.text-5 {
-    text-align: left;
-    vertical-align: top;
-    font-size: 13px;
-    font-family: Nunito;
-    /*letter-spacing: -1.5%;*/
-    line-height: 17%;
-    color: #000000;
-}
+
 .group-1-9 {
-    height: 25px;
-    width: 125px;
+    width: fit-content;
+    height: fit-content;
+    margin: 5%;
 }
 .rectangle-4-0 {
     border-radius: 8px;
@@ -84,12 +101,136 @@
     width: 125px;
     background-color: #f88c8c;
 }
-.text-6 {
-    text-align: left;
-    vertical-align: top;
-    font-size: 13px;
+
+.center-img {
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    max-width: 100%;
+    max-height: 100%
+  }
+
+.column1 {
+    float: left;
+    width: 65%;
+  }
+  .column2 {
+    float: left;
+    width: 35%;
+    margin-top:15%;
+  }
+
+.row {
+   height:100%;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.TableCellGuardar{
+    margin: auto;
+    padding: 1%;
+}
+
+.text-guardar-alarma{
+    text-align:right;
+    position: relative;
+    right: 0px;
+    font-size: 16px;
     font-family: Nunito;
-    /*letter-spacing: -1.5%;*/
-    line-height: 17%;
     color: #000000;
+    margin: 1px;
+}
+
+
+.text-5 {
+    text-align: left;
+    font-size: 16px;
+    font-family: Nunito;
+    color: #000000;
+    padding: 5px;
+
+}
+
+.hour-alert{
+    text-align: left;
+    font-size: 18px;
+    font-family: Nunito;
+    color: #000000;
+    padding: 5px;
+
+}
+.descripcion-alert{
+    text-align: left;
+    font-size: 18px;
+    font-family: Nunito;
+    color: #000000;
+    padding: 5px;
+
+}
+
+.calendar{
+    text-align: left;
+    font-size: 17px;
+    font-family: Nunito;
+    color: #000000;
+    margin: 1px;
+    padding: 10px;
+    border: #FF9CF4;
+    stroke: #FF9CF4;
+    stroke-opacity: 0.2;
+    outline: 0;
+}
+
+.fase{
+    text-align: left;
+    font-size: 17px;
+    font-family: Nunito;
+    color: #000000;
+    margin: 1px;
+    padding: 10px;
+    border: 0px;
+    outline: 0;
+}
+.hora{
+    text-align: left;
+    font-size: 17px;
+    font-family: Nunito;
+    color: #000000;
+    margin: 1px;
+    padding: 10px;
+    border: 0px;
+    outline: 0;
+}
+.calendar-mens{
+    border: 1px solid #FF9CF4;
+    width: fit-content;
+    margin-left: 1px;
+    padding: 5px;
+}
+
+.img-calendario{
+    max-width: 100%;
+    max-height: 100%;
+}
+.img-qr{
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+#flexSwitchCheckDefault{
+    background-color: #FF9CF4;
+    border-color: #FF9CF4;
+    accent-color: #ffffff;
+    outline: 0;
+    width: 50px;
+    height: 20px;
+}
+
+.wrapper{
+    height:100vh;
 }
